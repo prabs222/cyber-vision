@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: none; */
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(9, 9, 9, 0.6), rgba(14, 14, 14, 0.6)), url("/static/images/google-earth.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 20px 0 10px 30px;
+    text-align: center;
+}
+
+header .back-btn {
+    margin-top: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+h4 {
+    text-align: right;
+    margin: 5px 20px 45px 0;
+    font-size: 20px;
+    color: tomato;
+    transition: 1s;
+    scroll-behavior: smooth;
+}
+
+.locality h3 {
+    color: #fff;
+    margin: 60px 0 0px 30px;
+    font-size: 35px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+    flex-direction: row;
+}
+
+.data-card {
+    position: relative;
+    margin: 10px 20px 20px 40px;
+    /* max-width: 900px; */
+    width: 900px;
+    /* background-color: #fff; */
+    border-left: 5px solid rgb(237, 65, 65);
+    border-bottom: 4px solid rgb(237, 65, 65);
+    border-radius: 10px;
+    height: 320px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.camera-section {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.camera-details {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.camera-details p {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.ip-address {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.activities {
+    margin-top: 90px;
+}
+
+.activities button {
+    width: 130px;
+    margin: 0 10px 0 0;
+    border: none;
+    height: 25px;
+    background-color: tomato;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.activities button:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.navigation select {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    /* border: none; */
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    color: tomato;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) and (max-width: 1028px) {}
+
+@media (max-width: 1028px) {
+    section {
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .data-card {
+        margin: 20px;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 426px) {
+    header h1 {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    header .back-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .data-card {
+        height: 350px;
+    }
+
+    .activities button {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .back-btn {
+        margin-right: 10px;
+    }
+}
+
