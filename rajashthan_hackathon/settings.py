@@ -156,6 +156,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -163,7 +164,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT =  BASE_DIR / "static"
+STATIC_ROOT =  BASE_DIR / "static/"
 
 
 # Default primary key field type
