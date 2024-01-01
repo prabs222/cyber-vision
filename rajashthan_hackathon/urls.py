@@ -24,4 +24,4 @@ urlpatterns = [
     path('',include('myapp.urls')),
     path('accounts/', include('allauth.urls')),
 
-] 
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
