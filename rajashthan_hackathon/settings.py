@@ -153,7 +153,7 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+# USE_I18N = True
 
 USE_TZ = True
 CORS_ALLOW_ALL_ORIGINS = True
@@ -162,7 +162,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -172,10 +172,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 if DEBUG:
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 's')
+        BASE_DIR / 'static/'
     ]
 else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 's')
+    STATIC_ROOT = BASE_DIR / 'static/'
 
 STATIC_URL = 'static/'
 
