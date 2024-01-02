@@ -175,7 +175,7 @@ if DEBUG:
         BASE_DIR / 'static/'
     ]
 else:
-    STATIC_ROOT = BASE_DIR / 'static/admin'
+    STATIC_ROOT = BASE_DIR / 'static/'
 
 STATIC_URL = 'static/'
 
